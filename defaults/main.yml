@@ -27,14 +27,14 @@ ansible_facts_path: /etc/ansible/facts.d
 
 # Used for audit
 ubtu22cis_level_1: true
-ubtu22cis_level_2: true
+ubtu22cis_level_2: false
 
 ## Possibly disruptive tasks
 # This variable governs whether tasks of a potentially disruptive nature on your system
 # (e.g., removing .forward and .netrc files for interactive users) are carried out.
 # If you set this variable to "true", the role will carry such tasks; if you set it to
 # "false", these tasks will be skipped.
-ubtu22cis_disruption_high: true
+ubtu22cis_disruption_high: false
 
 ## Unrestricted boot
 # Setting this variable to false enables the system to
@@ -93,6 +93,7 @@ audit_bin_copy_location: /some/accessible/path
 # options are git/copy/archive/get_url other e.g. if you wish to run from already downloaded conf
 audit_content: git
 
+
 # If using either archive, copy, get_url:
 ## Note will work with .tar files - zip will require extra configuration
 ### If using get_url this is expecting github url in tar.gz format e.g.
@@ -146,50 +147,50 @@ ubtu22cis_rule_1_1_1_2: true
 ubtu22cis_rule_1_1_1_3: true
 ubtu22cis_rule_1_1_1_4: true
 ubtu22cis_rule_1_1_1_5: true
-ubtu22cis_rule_1_1_1_6: true
-ubtu22cis_rule_1_1_1_7: true
-ubtu22cis_rule_1_1_1_8: true
+ubtu22cis_rule_1_1_1_6: false
+ubtu22cis_rule_1_1_1_7: false
+ubtu22cis_rule_1_1_1_8: false
 
 # 1.1.2 Configure Filesystem Partitions
 # /tmp
-ubtu22cis_rule_1_1_2_1_1: true
-ubtu22cis_rule_1_1_2_1_2: true
-ubtu22cis_rule_1_1_2_1_3: true
-ubtu22cis_rule_1_1_2_1_4: true
+ubtu22cis_rule_1_1_2_1_1: false
+ubtu22cis_rule_1_1_2_1_2: false
+ubtu22cis_rule_1_1_2_1_3: false
+ubtu22cis_rule_1_1_2_1_4: false
 
 # /dev/shm
-ubtu22cis_rule_1_1_2_2_1: true
-ubtu22cis_rule_1_1_2_2_2: true
-ubtu22cis_rule_1_1_2_2_3: true
-ubtu22cis_rule_1_1_2_2_4: true
+ubtu22cis_rule_1_1_2_2_1: false
+ubtu22cis_rule_1_1_2_2_2: false
+ubtu22cis_rule_1_1_2_2_3: false
+ubtu22cis_rule_1_1_2_2_4: false
 
 # /home
-ubtu22cis_rule_1_1_2_3_1: true
-ubtu22cis_rule_1_1_2_3_2: true
-ubtu22cis_rule_1_1_2_3_3: true
+ubtu22cis_rule_1_1_2_3_1: false
+ubtu22cis_rule_1_1_2_3_2: false
+ubtu22cis_rule_1_1_2_3_3: false
 
 # /var
-ubtu22cis_rule_1_1_2_4_1: true
-ubtu22cis_rule_1_1_2_4_2: true
-ubtu22cis_rule_1_1_2_4_3: true
+ubtu22cis_rule_1_1_2_4_1: false
+ubtu22cis_rule_1_1_2_4_2: false
+ubtu22cis_rule_1_1_2_4_3: false
 
 # /var/tmp
-ubtu22cis_rule_1_1_2_5_1: true
-ubtu22cis_rule_1_1_2_5_2: true
-ubtu22cis_rule_1_1_2_5_3: true
-ubtu22cis_rule_1_1_2_5_4: true
+ubtu22cis_rule_1_1_2_5_1: false
+ubtu22cis_rule_1_1_2_5_2: false
+ubtu22cis_rule_1_1_2_5_3: false
+ubtu22cis_rule_1_1_2_5_4: false
 
 # /var/log
-ubtu22cis_rule_1_1_2_6_1: true
-ubtu22cis_rule_1_1_2_6_2: true
-ubtu22cis_rule_1_1_2_6_3: true
-ubtu22cis_rule_1_1_2_6_4: true
+ubtu22cis_rule_1_1_2_6_1: false
+ubtu22cis_rule_1_1_2_6_2: false
+ubtu22cis_rule_1_1_2_6_3: false
+ubtu22cis_rule_1_1_2_6_4: false
 
 # /var/log/audit
-ubtu22cis_rule_1_1_2_7_1: true
-ubtu22cis_rule_1_1_2_7_2: true
-ubtu22cis_rule_1_1_2_7_3: true
-ubtu22cis_rule_1_1_2_7_4: true
+ubtu22cis_rule_1_1_2_7_1: false
+ubtu22cis_rule_1_1_2_7_2: false
+ubtu22cis_rule_1_1_2_7_3: false
+ubtu22cis_rule_1_1_2_7_4: false
 
 # 1.2 Package mgmt
 # 1.2.1 Configure Package repositories
@@ -203,7 +204,7 @@ ubtu22cis_rule_1_2_2_1: true
 ubtu22cis_rule_1_3_1_1: true
 ubtu22cis_rule_1_3_1_2: true
 ubtu22cis_rule_1_3_1_3: true
-ubtu22cis_rule_1_3_1_4: true
+ubtu22cis_rule_1_3_1_4: false
 
 # 1.4 Configure Bootloader
 ubtu22cis_rule_1_4_1: true
@@ -225,13 +226,13 @@ ubtu22cis_rule_1_6_5: true
 ubtu22cis_rule_1_6_6: true
 
 # 1.7 Configure GNOME Display Manager
-ubtu22cis_rule_1_7_1: true
+ubtu22cis_rule_1_7_1: false
 ubtu22cis_rule_1_7_2: true
-ubtu22cis_rule_1_7_3: true
-ubtu22cis_rule_1_7_4: true
+ubtu22cis_rule_1_7_3: false # error
+ubtu22cis_rule_1_7_4: false # error
 ubtu22cis_rule_1_7_5: true
-ubtu22cis_rule_1_7_6: true
-ubtu22cis_rule_1_7_7: true
+ubtu22cis_rule_1_7_6: false
+ubtu22cis_rule_1_7_7: false
 ubtu22cis_rule_1_7_8: true
 ubtu22cis_rule_1_7_9: true
 ubtu22cis_rule_1_7_10: true
@@ -240,8 +241,8 @@ ubtu22cis_rule_1_7_10: true
 # Section 2 is Services (Special Purpose Services, and service clients)
 
 # 2.1 Configure Server Services
-ubtu22cis_rule_2_1_1: true
-ubtu22cis_rule_2_1_2: true
+ubtu22cis_rule_2_1_1: false
+ubtu22cis_rule_2_1_2: false
 ubtu22cis_rule_2_1_3: true
 ubtu22cis_rule_2_1_4: true
 ubtu22cis_rule_2_1_5: true
@@ -250,16 +251,16 @@ ubtu22cis_rule_2_1_7: true
 ubtu22cis_rule_2_1_8: true
 ubtu22cis_rule_2_1_9: true
 ubtu22cis_rule_2_1_10: true
-ubtu22cis_rule_2_1_11: true
+ubtu22cis_rule_2_1_11: false
 ubtu22cis_rule_2_1_12: true
-ubtu22cis_rule_2_1_13: true
+ubtu22cis_rule_2_1_13: false #error
 ubtu22cis_rule_2_1_14: true
 ubtu22cis_rule_2_1_15: true
 ubtu22cis_rule_2_1_16: true
 ubtu22cis_rule_2_1_17: true
 ubtu22cis_rule_2_1_18: true
 ubtu22cis_rule_2_1_19: true
-ubtu22cis_rule_2_1_20: true
+ubtu22cis_rule_2_1_20: false
 ubtu22cis_rule_2_1_21: true
 ubtu22cis_rule_2_1_22: true
 
@@ -267,7 +268,7 @@ ubtu22cis_rule_2_1_22: true
 ubtu22cis_rule_2_2_1: true
 ubtu22cis_rule_2_2_2: true
 ubtu22cis_rule_2_2_3: true
-ubtu22cis_rule_2_2_4: true
+ubtu22cis_rule_2_2_4: false # error
 ubtu22cis_rule_2_2_5: true
 ubtu22cis_rule_2_2_6: true
 
@@ -297,13 +298,13 @@ ubtu22cis_rule_2_4_2_1: true
 ## Section 3 Network Configuration
 # 3.1 Configure Network Devices
 ubtu22cis_rule_3_1_1: true
-ubtu22cis_rule_3_1_2: true
-ubtu22cis_rule_3_1_3: true
+ubtu22cis_rule_3_1_2: false
+ubtu22cis_rule_3_1_3: false
 # 3.2 Configure Network Kernel Modules (Host Only)
-ubtu22cis_rule_3_2_1: true
-ubtu22cis_rule_3_2_2: true
-ubtu22cis_rule_3_2_3: true
-ubtu22cis_rule_3_2_4: true
+ubtu22cis_rule_3_2_1: false
+ubtu22cis_rule_3_2_2: false
+ubtu22cis_rule_3_2_3: false
+ubtu22cis_rule_3_2_4: false
 # 3.3 Configure Network Kernel Parameters (Host and Router)
 ubtu22cis_rule_3_3_1: true
 ubtu22cis_rule_3_3_2: true
@@ -381,7 +382,7 @@ ubtu22cis_rule_5_1_22: true
 ubtu22cis_rule_5_2_1: true
 ubtu22cis_rule_5_2_2: true
 ubtu22cis_rule_5_2_3: true
-ubtu22cis_rule_5_2_4: true
+ubtu22cis_rule_5_2_4: false
 ubtu22cis_rule_5_2_5: true
 ubtu22cis_rule_5_2_6: true
 ubtu22cis_rule_5_2_7: true
@@ -397,7 +398,7 @@ ubtu22cis_rule_5_3_2_4: true
 # 5.3.3.1 Configure pam_faillock module
 ubtu22cis_rule_5_3_3_1_1: true
 ubtu22cis_rule_5_3_3_1_2: true
-ubtu22cis_rule_5_3_3_1_3: true
+ubtu22cis_rule_5_3_3_1_3: false
 # 5.3.3.2 Configure pam_quality module
 ubtu22cis_rule_5_3_3_2_1: true
 ubtu22cis_rule_5_3_3_2_2: true
@@ -420,7 +421,7 @@ ubtu22cis_rule_5_3_3_4_4: true
 # 5.4 User Accounts and Environment
 # 5.4.1 Configure shadow password suite parameters
 ubtu22cis_rule_5_4_1_1: true
-ubtu22cis_rule_5_4_1_2: true
+ubtu22cis_rule_5_4_1_2: false
 ubtu22cis_rule_5_4_1_3: true
 ubtu22cis_rule_5_4_1_4: true
 ubtu22cis_rule_5_4_1_5: true
@@ -443,7 +444,7 @@ ubtu22cis_rule_5_4_3_3: true
 # 6.1 Configure Filesystem Integrity Checking
 ubtu22cis_rule_6_1_1: true
 ubtu22cis_rule_6_1_2: true
-ubtu22cis_rule_6_1_3: true
+ubtu22cis_rule_6_1_3: false
 # 6.2.1.1 Configure systemd-journald service
 ubtu22cis_rule_6_2_1_1_1: true
 ubtu22cis_rule_6_2_1_1_2: true
@@ -459,48 +460,48 @@ ubtu22cis_rule_6_2_1_2_4: true
 # 6.2.2 Configure Logfiles
 ubtu22cis_rule_6_2_2_1: true
 # 6.3.1 Configure auditd Service
-ubtu22cis_rule_6_3_1_1: true
-ubtu22cis_rule_6_3_1_2: true
-ubtu22cis_rule_6_3_1_3: true
-ubtu22cis_rule_6_3_1_4: true
+ubtu22cis_rule_6_3_1_1: false
+ubtu22cis_rule_6_3_1_2: false
+ubtu22cis_rule_6_3_1_3: false
+ubtu22cis_rule_6_3_1_4: false
 # 6.3.2 Configure data retention
-ubtu22cis_rule_6_3_2_1: true
-ubtu22cis_rule_6_3_2_2: true
-ubtu22cis_rule_6_3_2_3: true
-ubtu22cis_rule_6_3_2_4: true
+ubtu22cis_rule_6_3_2_1: false
+ubtu22cis_rule_6_3_2_2: false
+ubtu22cis_rule_6_3_2_3: false
+ubtu22cis_rule_6_3_2_4: false
 # 6.3.3 Configure auditd rules
-ubtu22cis_rule_6_3_3_1: true
-ubtu22cis_rule_6_3_3_2: true
-ubtu22cis_rule_6_3_3_3: true
-ubtu22cis_rule_6_3_3_4: true
-ubtu22cis_rule_6_3_3_5: true
-ubtu22cis_rule_6_3_3_6: true
-ubtu22cis_rule_6_3_3_7: true
-ubtu22cis_rule_6_3_3_8: true
-ubtu22cis_rule_6_3_3_9: true
-ubtu22cis_rule_6_3_3_10: true
-ubtu22cis_rule_6_3_3_11: true
-ubtu22cis_rule_6_3_3_12: true
-ubtu22cis_rule_6_3_3_13: true
-ubtu22cis_rule_6_3_3_14: true
-ubtu22cis_rule_6_3_3_15: true
-ubtu22cis_rule_6_3_3_16: true
-ubtu22cis_rule_6_3_3_17: true
-ubtu22cis_rule_6_3_3_18: true
-ubtu22cis_rule_6_3_3_19: true
-ubtu22cis_rule_6_3_3_20: true
-ubtu22cis_rule_6_3_3_21: true
+ubtu22cis_rule_6_3_3_1: false
+ubtu22cis_rule_6_3_3_2: false
+ubtu22cis_rule_6_3_3_3: false
+ubtu22cis_rule_6_3_3_4: false
+ubtu22cis_rule_6_3_3_5: false
+ubtu22cis_rule_6_3_3_6: false
+ubtu22cis_rule_6_3_3_7: false
+ubtu22cis_rule_6_3_3_8: false
+ubtu22cis_rule_6_3_3_9: false
+ubtu22cis_rule_6_3_3_10: false
+ubtu22cis_rule_6_3_3_11: false
+ubtu22cis_rule_6_3_3_12: false
+ubtu22cis_rule_6_3_3_13: false
+ubtu22cis_rule_6_3_3_14: false
+ubtu22cis_rule_6_3_3_15: false
+ubtu22cis_rule_6_3_3_16: false
+ubtu22cis_rule_6_3_3_17: false
+ubtu22cis_rule_6_3_3_18: false
+ubtu22cis_rule_6_3_3_19: false
+ubtu22cis_rule_6_3_3_20: false
+ubtu22cis_rule_6_3_3_21: false
 # 6.3.4 Configure audit file access
-ubtu22cis_rule_6_3_4_1: true
-ubtu22cis_rule_6_3_4_2: true
-ubtu22cis_rule_6_3_4_3: true
-ubtu22cis_rule_6_3_4_4: true
-ubtu22cis_rule_6_3_4_5: true
-ubtu22cis_rule_6_3_4_6: true
-ubtu22cis_rule_6_3_4_7: true
-ubtu22cis_rule_6_3_4_8: true
-ubtu22cis_rule_6_3_4_9: true
-ubtu22cis_rule_6_3_4_10: true
+ubtu22cis_rule_6_3_4_1: false
+ubtu22cis_rule_6_3_4_2: false
+ubtu22cis_rule_6_3_4_3: false
+ubtu22cis_rule_6_3_4_4: false
+ubtu22cis_rule_6_3_4_5: false
+ubtu22cis_rule_6_3_4_6: false
+ubtu22cis_rule_6_3_4_7: false
+ubtu22cis_rule_6_3_4_8: false
+ubtu22cis_rule_6_3_4_9: false
+ubtu22cis_rule_6_3_4_10: false
 
 ## Section 7
 # 7.1 System File Permissions
@@ -621,7 +622,7 @@ ubtu22cis_ipv6_required: false
 ubtu22cis_gui: "{{ prelim_gnome_present.stat.exists | default(false) }}"
 
 # If desktop is required this will set the relevant controls but not remove
-ubtu22cis_desktop_required: false
+ubtu22cis_desktop_required: true
 
 ## Purge apt packages
 # This will allow the purging of any packages that are marked to be removed
@@ -702,9 +703,9 @@ ubtu22cis_disable_dynamic_motd: true
 # The default database is `local`.
 ubtu22cis_dconf_db_name: "{{ prelim_dconf_db_user | default('local') }}"
 # This variable governs the number of seconds of inactivity before the screen goes blank.
-ubtu22cis_screensaver_idle_delay: 900
+ubtu22cis_screensaver_idle_delay: 300
 # This variable governs the number of seconds the screen remains blank before it is locked.
-ubtu22cis_screensaver_lock_delay: 5
+ubtu22cis_screensaver_lock_delay: 0
 
 ##
 ## Section 2 Control Variables
@@ -713,7 +714,7 @@ ubtu22cis_screensaver_lock_delay: 5
 ## Control 2.3.1.1
 # This variable choses the tool used for time synchronization
 # The two options are `chrony`and `systemd-timesyncd`.
-ubtu22cis_time_sync_tool: "systemd-timesyncd"
+ubtu22cis_time_sync_tool: "chrony"
 
 ## Controls 2.3.x - Configure time pools & servers for chrony and timesyncd
 # The following variable represents a list of of time server pools used
@@ -744,14 +745,14 @@ ubtu22cis_time_servers:
 ## Control 3.1.1 - Ensure system is checked to determine if IPv6 is enabled
 # This variable governs the mechanism of how the disabling of IPV6 is carried out.
 # Its possible values are `grub` and `sysctl`.
-ubtu22cis_ipv6_disable: grub
+ubtu22cis_ipv6_disable: sysctl
 
 ## Control 3.1.2 - Ensure wireless interfaces are disabled
 # This variable is used for a preliminary task regarding the installation of Network Manager
 # If it is set to `true`, Network Manager is installed during the "prelim" section of
 # the role. If set to `false`, Network Manager is not installed. Bear in mind that without
 # it, ensuring that wireless interfaces are disabled will not be possible!
-ubtu22cis_install_network_manager: true
+ubtu22cis_install_network_manager: false
 
 ## Control 3.1.3 - Ensure bluetooth Services are not in use
 # This control managed how the bluetooth service is managaed
@@ -787,10 +788,11 @@ ubtu22cis_ufw_use_sysctl: true
 # The value of this variable represents the ports for the firewall to allow oubound traffic from.
 # If you want to allow outbound traffic on all ports, set the variable to  `all`, e.g.,
 # `ubtu22cis_ufw_allow_out_ports: "all"`.
-ubtu22cis_ufw_allow_out_ports:
-  - 53
-  - 80
-  - 443
+ubtu22cis_ufw_allow_out_ports: "all"
+  # - 53
+  # - 80
+  # - 443
+  # - 22
 
 ## Controls 4.2.x - nftables
 # Nftables is not supported in this role. Some tasks have parts of them commented out, this is one example
